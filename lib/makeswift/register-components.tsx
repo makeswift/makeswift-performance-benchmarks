@@ -14,3 +14,13 @@ ReactRuntime.registerComponent(HelloWorld, {
     className: Style({ properties: Style.All }),
   },
 })
+
+function SimpleComponent() {
+  return <p>Simple Component</p>
+}
+
+ReactRuntime.registerComponent(SimpleComponent, {
+  type: 'simple-component',
+  label: 'Simple Component',
+  props: {},
+})
